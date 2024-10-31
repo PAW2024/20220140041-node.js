@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
-const todoRoutes = require('./routes/todo.js');
-const port = 3000;
-
+const todoRoutes = require('./routes/tododb.js');
+require('dotenv').config();
+const port = process.env.PORT;
 
 
 app.use('/todos', todoRoutes);
